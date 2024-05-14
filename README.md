@@ -4,16 +4,22 @@ In this project, I developed a machine learning model to recognize human activit
 
 Key Steps:
 
-Data Preprocessing: Imported necessary libraries including pandas, numpy, and scikit-learn for data manipulation, visualization, and modeling.
+Data Collection and Inspection: Acquired a dataset containing sensor readings from smartphones during various human activities. Inspected the dataset for any inconsistencies or anomalies.
 
-Exploratory Data Analysis (EDA): Conducted EDA to understand the structure and distribution of the data. This involved checking for duplicates, missing values, and visualizing the distribution of activities and features.
+Data Preprocessing: Cleaned the dataset by handling duplicates and missing values to ensure the quality of the data for analysis and modeling.
 
-Feature Engineering: Extracted relevant features from the raw sensor data. Analyzed features like 'tBodyAccMag-mean()' and 'angle(X,gravityMean)' to differentiate between different activities.
+Exploratory Data Analysis (EDA): Conducted EDA to understand the distribution of sensor data and the patterns of different human activities. Visualized the data to identify any trends or relationships between features and activities.
 
-Model Training: Trained multiple machine learning models including Logistic Regression, Kernel SVM, Decision Tree, and Random Forest. Utilized hyperparameter tuning and cross-validation techniques to optimize model performance.
+Feature Engineering: Extracted relevant features from the raw sensor data to improve the predictive performance of the model. Engineered features such as magnitude of acceleration and angles between axes and gravity to capture important characteristics of human activities.
 
-Model Evaluation: Evaluated model performance using accuracy score and confusion matrix. Plotted confusion matrices to visualize the performance of the models in classifying different activities.
+Dimensionality Reduction: Utilized dimensionality reduction techniques such as Principal Component Analysis (PCA) and t-Distributed Stochastic Neighbor Embedding (t-SNE) to visualize high-dimensional data in lower-dimensional space. This helped in understanding the structure of the data and identifying potential clusters or patterns.
 
-Conclusion: Achieved high accuracy in classifying human activities using smartphone data, with Logistic Regression achieving an accuracy of 99.9%. Identified best parameters for each model using RandomizedSearchCV, with DecisionTreeClassifier(max_depth=8) and RandomForestClassifier(n_estimators=80, max_depth=14) being the optimal choices.
+Model Training: Trained multiple machine learning models including Logistic Regression, Support Vector Machines (SVM), Decision Trees, and Random Forests. Each model was trained on the preprocessed dataset to learn the relationship between features and activity labels.
+
+Hyperparameter Tuning: Optimized the hyperparameters of the models using techniques like RandomizedSearchCV to improve their performance and generalization capabilities.
+
+Model Evaluation: Evaluated the performance of each model using metrics such as accuracy score and confusion matrix. This helped in assessing how well the models were able to classify different human activities.
+
+Conclusion: Achieved high accuracy in classifying human activities, demonstrating proficiency in data preprocessing, exploratory data analysis, feature engineering, dimensionality reduction, model selection, hyperparameter tuning, and model evaluation, with Logistic Regression achieving an accuracy of 99.9%. Identified best parameters for each model using RandomizedSearchCV, with DecisionTreeClassifier(max_depth=8) and RandomForestClassifier(n_estimators=80, max_depth=14) being the optimal choices
 
 This project demonstrates proficiency in data preprocessing, exploratory data analysis, feature engineering, and model training and evaluation techniques.
